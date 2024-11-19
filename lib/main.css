@@ -1,0 +1,30 @@
+
+body {
+    padding-top: 108px;
+}
+.modal-header, .modal-body {
+    background-color: rgba(29, 28, 28, 0.863);
+}.box-shadow{
+    box-shadow: 0 2px 4px 0 rgba(119, 55, 55, 0.5),
+                0 4px 8px 0 rgba(119, 55, 55, 0.5)
+}
+.bg-color1 {
+    background-color: rgba(87, 40, 40, 0.897);
+}
+.bg-color2 {
+    background-color: rgba(214, 169, 43, 0.411);
+}
+.card-img {
+    height: 16rem;
+}
+#bquote{
+    background: url(../img/bcote.jfif) center center no-repeat;
+    background-size: cover;
+}
+.lista-plano li + li {
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+.lista-plano li{
+    padding: 1rem;
+    
+}

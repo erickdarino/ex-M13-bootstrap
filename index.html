@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darino Churrascaria</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="lib/main.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark pt-3 px-4 fixed-top"> <!--navbar-->
+        <p class="pt-2"><a class="h2 link-light link-offset-2 link-underline link-underline-opacity-0 " href="index.html"><em>⭑⋆★DARINO</em><img src="img/logo.png" alt=""></a></p>
+
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+        aria-expanded="false" aria-label="AbrirNavegação">
+        
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar-dark">
+                <div class="dropdown" data-bs-theme="dark">
+                    <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Locais
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Londrina-PR</a></li>
+                        <li><a class="dropdown-item" href="#">Santos-SP</a></li>
+                        <li><a class="dropdown-item" href="#">Blumenau-SC</a></li>
+                    </ul>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+                <li class="nav-item"><a class="btn btn-secondary" type="button" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade text-light" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true"><!--Modal-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Faça o Login para continuar.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailAjuda">
+                            <div id="emailAjuda" class="form-text text-light">Nós nunca compartilharemos seus dados com ninguém.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputSenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="inputSenha">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkBox">
+                            <label class="form-check-label" for="checkBox ">Me mantenha logado</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <button type="submit" class="btn btn-outline-light">Cadastrar-se</button>
+                        <div class="form-text text-light">Esqueceu a senha? <a class="link-light" href="#">Clique aqui.</a></div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid"><!--carrossel-->
+        <div class="row bg-color1">
+            <div class="col-lg-7 p-0" >
+                <div id="carouselFood" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="6000">
+                            <img src="https://img.freepik.com/fotos-gratis/cenario-cinematografico-de-bife-grelhado_1409-5679.jpg?t=st=1731928229~exp=1731931829~hmac=132354f6bead0849636c13eac9353e1dc86307fc44535c95160a065820e8dc6a&w=740" class="d-block w-100" alt="carne assada">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <img src="https://images.pexels.com/photos/1903936/pexels-photo-1903936.jpeg" class="d-block w-100" alt="carne assada">
+                            
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <img src="https://img.freepik.com/fotos-gratis/vista-superior-de-um-delicioso-kebab-em-ardosia-com-salada-e-ketchup_23-2148685527.jpg?t=st=1731929429~exp=1731933029~hmac=5d78e2526c98a630ac18ad64082554bbb91b34ba86c741c2ec2de1f870ce411b&w=740" class="d-block w-100" alt="carne assada">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFood" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFood" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-5 text-white p-4 align-self-center">
+                <h1 class=" display-4 ">"Proporcionando a melhor experiência"</h1>
+            <p><em>Cada mordida é uma <strong>celebração</strong>, um mix de sentimentos e <strong>boas memórias!</em></strong></p>
+            <form action="">
+                <div class="input-group input-group-lg mt-5">
+                    <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2">
+                    <button class="btn btn-secondary" type="button" id="button-addon2">Enviar</button>
+                </div>
+                <div class="form-text text-light"> Receba nossa agenda de promoções e eventos!</div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid text-center bg-color2 pb-5" id="cardapio"> <!--Cards-->
+        <div class="py-5">
+            <span class="h6 d-block">TUDO DE MELHOR PRA VOCÊ</span>
+            <h2 class="display-4 text-danger">Confira nossos pratos</h2>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-5" >
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/picanha.webp" class="card-img-top card-img" alt="picanha">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Picanha</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt magni eveniet ipsa nostrum, dolor adipisci odio enim, mollitia rem accusamus architecto voluptatem. Veniam reprehenderit a neque cumque incidunt. Id.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/Fraldinha.png" class="card-img-top card-img" alt="Fraudinha">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Fraudinha</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo aperiam sequi quidem voluptatum consequatur natus nihil. Voluptates, et. Hic sapiente soluta perspiciatis! Voluptas dolore magnam dolor vitae ut voluptatibus.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/costelaSuina.jpg" class="card-img-top card-img" alt="Costela Suína">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Costela Suína</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, enim quis unde, nobis facilis neque consequatur porro eaque est, iste vero. Iure corporis, ab explicabo tempore magnam praesentium mollitia ex!</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/cupim.jpg" class="card-img-top card-img" alt="Cupim">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Cupim</h4>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aperiam quasi aliquid eaque itaque repellendus suscipit eius hic eligendi, error consequatur porro. Iste quod rerum eos? Dolorem accusamus debitis nostrum!</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/toscana.jpg" class="card-img-top card-img" alt="Toscana">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Toscana</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora, quasi sit, quis dolorum repudiandae, ab error quibusdam aperiam facere explicabo sequi reprehenderit recusandae illum commodi? Minus amet tempore omnis.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light">
+                        <img src="img/paodealho.jpg" class="card-img-top card-img" alt="Pão de Alho">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger ">Pão de Alho</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, provident voluptates. Numquam, doloremque. Voluptas illo at dicta ducimus voluptate perferendis quaerat hic error! Corrupti laboriosam libero maxime, dolore repudiandae atque.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-body-secondary">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bquote" class="p-md-5 bg-color2"><!--BlockQuote-->
+        <blockquote class="blockquote text-center text-white p-md-5 p-3">
+            <p  class="display-3"><em>"Que nunca nos falte amigos, cervejas e uma churrascaria!"</em></p>
+            <footer class="blockquote-footer text-white">Eu faminto</footer>
+        </blockquote>
+    </section>
+
+    <section class="container-fluid bg-color2 py-5" id="reservas"><!--acordeon-->
+        <div class="container mb-5">
+            <div class="text-center">
+                <span class="h6 d-block">CHAME SUA TRIBO!</span>
+                <h2 class="display-4 text-danger">Confira nossas promoções para confraternizações</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 my-5">
+                    <div class="bg-light rounded p-4 box-shadow">
+                        <h2 class="text-danger">Reservas de 4 a 8 pessoas</h2>
+                        <ul class="list-unstyled lista-plano">
+                            <li>→ 1 opção de bebida para cada pessoa</li>
+                            <li>→ 2 pratos especiais p/ aniversariantes</li>
+                            <li>→ mesa reservada ecustomizada</li>
+                            <li>→ 1 opção gratuita de sobremesa (aniversariante)</li>
+                        </ul>
+                        <form>
+                            <select class="form-select bg-light" aria-label="Default select example">
+                                <option selected>Selecione a cidade</option>
+                                <option value="1">Londrina-PR</option>
+                                <option value="2">Santos-SP</option>
+                                <option value="3">Blumenau-SC</option>
+                            </select>
+                        </form>
+                        <div class="row mt-4 align-items-center">
+                            <div class="col"><a href="#" class="btn btn-danger btn-lg btn-block">Reservar</a></div>
+                            <div class="col">
+                                <span class="h5">R$125,00 POR PESSOA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 my-5">
+                    <div class="bg-light rounded p-4 box-shadow">
+                        <h2 class="text-danger">Reservas de 9 a 20 pessoas<span class="badge text-bg-info">Novo</span></h2>
+                        <ul class="list-unstyled lista-plano">
+                            <li>→ 1 hora de open-bar</li>
+                            <li>→ 1 prato especial para os 10 primeiros</li>
+                            <li>→ mesa reservada e customizada</li>
+                            <li>→ 1 opção gratuita de sobremesa para cada convidado</li>
+                        </ul>
+                        <form>
+                            <select class="form-select bg-light" aria-label="Default select example">
+                                <option selected>Selecione a cidade</option>
+                                <option value="1">Londrina-PR</option>
+                                <option value="2">Santos-SP</option>
+                                <option value="3">Blumenau-SC</option>
+                            </select>
+                        </form>
+                        <div class="row mt-4 align-items-center">
+                            <div class="col"><a href="#" class="btn btn-danger btn-lg btn-block">Reservar</a></div>
+                            <div class="col">
+                                <span class="h5">R$105,00 POR PESSOA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-4 pb-3 ">
+                <span class="h6 d-block">ESTÁ COM DÚVIDAS?</span>
+                <h2 class="display-4 text-danger">Perguntas Frequentes</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="accordion" id="perguntasFrequentes">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button h1 text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+                                    É possível cancelar a reserva?
+                                </button>
+                            </h2>
+                            <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#perguntasFrequentes">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque dignissimos eum voluptatibus amet quidem ab quos provident, rem ipsam non ut obcaecati esse similique repellat neque commodi eius quisquam?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button h1 text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta2" aria-expanded="true" aria-controls="pergunta2">
+                                    Quanto tempo posso me atrasar?
+                                </button>
+                            </h2>
+                            <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#perguntasFrequentes">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque dignissimos eum voluptatibus amet quidem ab quos provident, rem ipsam non ut obcaecati esse similique repellat neque commodi eius quisquam?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button h1 text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta3" aria-expanded="true" aria-controls="pergunta3">
+                                    Qual a principal forma de pagamento?
+                                </button>
+                            </h2>
+                            <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#perguntasFrequentes">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque dignissimos eum voluptatibus amet quidem ab quos provident, rem ipsam non ut obcaecati esse similique repellat neque commodi eius quisquam?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button h1 text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta4" aria-expanded="true" aria-controls="pergunta4">
+                                    Fazem festas de casamento?
+                                </button>
+                            </h2>
+                            <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#perguntasFrequentes">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque dignissimos eum voluptatibus amet quidem ab quos provident, rem ipsam non ut obcaecati esse similique repellat neque commodi eius quisquam?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button h1 text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta5" aria-expanded="true" aria-controls="pergunta5">
+                                    Vocês dão descontos para grupos grandes?
+                                </button>
+                            </h2>
+                            <div id="pergunta5" class="accordion-collapse collapse" data-bs-parent="#perguntasFrequentes">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque dignissimos eum voluptatibus amet quidem ab quos provident, rem ipsam non ut obcaecati esse similique repellat neque commodi eius quisquam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white"> <!--rodapé-->
+        <div class="container py-4">
+            <div class="row g-2 text-center">
+                <div class="col-md-4 ">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="link-light">Londrina-PR</a></li>
+                        <li><a href="#" class="link-light">Santos-SP</a></li>
+                        <li><a href="#" class="link-light">Blumenau-SC</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DO CONTATO</h4>
+                    <ul class="list-unstyled">
+                        <li>churrasdarino@ehobeef.com.br</li>
+                        <li>43 99999-9999</li>
+                        <li>De Qui. à Dom. das 10h às 23h</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="btn btn-outline-light mb-2 btn-sm btn-block w-100" style="max-width: 140px;">Facebook</a></li>
+                        <li><a href="#" class="btn btn-outline-light mb-2 btn-sm btn-block w-100" style="max-width: 140px;">Twitter</a></li>
+                        <li><a href="#" class="btn btn-outline-light mb-2 btn-sm btn-block w-100" style="max-width: 140px;">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
